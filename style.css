@@ -1,0 +1,413 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5rem;
+}
+
+/* her container styling  */
+.hero-container {
+    background-image: url(assets/images/bg-header-desktop.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding-top: 10rem;
+    gap: 1rem;
+
+}
+
+.logo {
+    width: 5rem;
+    margin-bottom: 1rem;
+}
+
+h1 {
+    text-align: center;
+    width: 100%;
+    line-height: 1;
+}
+
+.short-bio {
+    color: grey;
+    text-align: center;
+    letter-spacing: .2px;
+    max-width: 32rem;
+}
+
+.download-links {
+    display: flex;
+    gap: 1rem;
+    margin-top: 2rem;
+    margin-bottom: 5rem;
+}
+
+.download-links a {
+    text-decoration: none;
+    padding: 1rem 1.5rem;
+    border-radius: 2rem;
+    color: white;
+}
+
+.ios-download-btn {
+    background-color: #26BBA4;
+}
+
+.mac-download-btn {
+    background-color: #5F71FE;
+}
+
+/* features section styling  */
+
+.software-features {
+    display: flex;
+    padding: 1rem;
+    justify-content: space-evenly;
+    gap: 2rem;
+}
+
+.software-features img {
+    width: 50%;
+}
+
+.features {
+    padding: 1rem;
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+
+}
+
+h3 {
+    margin-bottom: .5rem;
+}
+
+.bio {
+    color: grey;
+    line-height: 2;
+    letter-spacing: .5;
+}
+
+/* software responsivness on different device section styling */
+.software-resopnsivness {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+
+.software-resopnsivness img {
+    width: 70%;
+    margin-top: 2rem;
+}
+
+/* tools section styling  */
+.tools-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: .5rem;
+}
+
+.tools {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 3rem;
+    gap: 3rem;
+}
+
+.tool {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+    gap: 1rem;
+}
+
+.tool img {
+    width: 100%;
+    max-width: 50px;
+}
+
+.tool p {
+    width: 20rem;
+    line-height: 1.5;
+}
+
+.social-companies {
+    margin-top: 5rem;
+    display: flex;
+    gap: 9rem;
+    align-items: center;
+}
+
+.clipboard-for-devices {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* gap: 1rem; */
+}
+
+h2 {
+    margin-bottom: .5rem;
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: #F3F6F8;
+    padding: 1.5rem;
+}
+
+.footer-logo {
+    width: 50px;
+}
+
+.footer-links {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+
+.footer-links a {
+    text-decoration: none;
+    color: grey;
+
+}
+
+.social-media-links {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    justify-content: center;
+}
+
+/* media querries for responsivness  */
+/* — Mobile */
+@media (max-width: 480px) {
+    .download-links {
+        display: flex;
+        flex-direction: column;
+        margin-top: 1rem;
+        margin-bottom: 2rem;
+    }
+
+    .software-features {
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .software-features img {
+        width: 80%;
+    }
+
+    .features {
+        width: 80%;
+        gap: 2rem;
+    }
+
+    .bio {
+        line-height: 1.3;
+        letter-spacing: .5;
+    }
+
+    .software-resopnsivness {
+        gap: 0;
+    }
+
+    .tools-section {
+        gap: 0rem;
+    }
+
+    .tools {
+        flex-direction: column;
+        margin-top: 3rem;
+        gap: 1.5rem;
+    }
+
+    .tool {
+        width: 100%;
+        gap: 1rem;
+    }
+
+    .social-companies {
+        margin-top: 2rem;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 3rem;
+    }
+
+    .social-companies img {
+        width: 100px;
+    }
+
+    footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 2rem;
+
+    }
+
+    .footer-links {
+        display: flex;
+        flex-direction: column;
+        gap: .5rem;
+    }
+
+}
+
+@media (min-width: 481px) and (max-width: 700px) {
+    .software-features {
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .software-features img {
+        width: 80%;
+    }
+
+    .features {
+        width: 80%;
+        gap: 2rem;
+    }
+
+    .bio {
+        line-height: 1.3;
+        letter-spacing: .5;
+    }
+
+    .tools-section {
+        gap: 0rem;
+    }
+
+    .tools {
+        display: grid;
+    }
+
+    .tool {
+        width: 100%;
+        gap: .5rem;
+    }
+
+    .social-companies {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        margin-top: 5rem;
+        gap: 3rem;
+    }
+
+    .social-companies img {
+        width: 100px;
+    }
+
+    .footer-logo {
+        width: 40px;
+    }
+
+    footer{
+       gap: 1rem; 
+      
+    }
+
+    .footer-links {
+        gap: 0rem;
+    }
+
+    .social-media-links {
+        gap: .5rem;
+    }
+
+}
+
+/* — Tablet */
+@media (min-width: 700px) and (max-width: 1300px) {
+    .software-features {
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .software-features img {
+        width: 80%;
+    }
+
+    .features {
+        width: 80%;
+        gap: 2rem;
+    }
+
+    .bio {
+        line-height: 1.3;
+        letter-spacing: .5;
+    }
+
+    .tools-section {
+        gap: 0rem;
+    }
+
+    .tools {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .tool {
+        width: 100%;
+        gap: .5rem;
+    }
+
+    .social-companies {
+        margin-top: 5rem;
+        gap: 2rem;
+    }
+
+    .social-companies img {
+        width: 100px;
+    }
+
+    .footer-logo {
+        width: 40px;
+    }
+
+    .footer-links {
+        gap: .5rem;
+    }
+
+    .social-media-links {
+        gap: 1rem;
+    }
+
+}
