@@ -7,7 +7,7 @@
 
 ## Live Demo
 
-- Add your live demo link here.
+- [Live demo](https://clipboard-landing-page-frontend-mento.netlify.app/)
 
 ---
 
